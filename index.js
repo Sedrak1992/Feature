@@ -1,6 +1,9 @@
 const row = document.querySelector("#row");
 
-let i = localStorage.getItem("from");
+
+let i = localStorage.getItem("from") || 0;
+  
+
 
 const arr = [
   ` <h1>Feature  1</h1>
