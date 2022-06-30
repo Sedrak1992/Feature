@@ -17,6 +17,8 @@ const arr = [
  <p>Lorem  consectetur adipisicing elit. Vitae impedit nihil
   sint quidem voluptas neque sequi quasi quos eaque voluptatum! </p>`,
 ];
+
+
 row.innerHTML = `
 <div>
         <ul>
@@ -31,6 +33,7 @@ row.innerHTML = `
  `;
 const li = document.querySelectorAll("a");
 function tab(e) {
+
   for (let i = 0; i < li.length; i++) {
     li[i].classList.remove("da");
   }
