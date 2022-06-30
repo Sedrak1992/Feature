@@ -1,9 +1,6 @@
 const row = document.querySelector("#row");
 
-
 let i = localStorage.getItem("from") || 0;
-  
-
 
 const arr = [
   ` <h1>Feature  1</h1>
@@ -18,7 +15,6 @@ const arr = [
   sint quidem voluptas neque sequi quasi quos eaque voluptatum! </p>`,
 ];
 
-
 row.innerHTML = `
 <div>
         <ul>
@@ -32,8 +28,8 @@ row.innerHTML = `
     </div>
  `;
 const li = document.querySelectorAll("a");
-function tab(e) {
 
+function tab(e) {
   for (let i = 0; i < li.length; i++) {
     li[i].classList.remove("da");
   }
@@ -41,5 +37,6 @@ function tab(e) {
   const content = document.querySelector("#content");
   content.innerHTML = arr[e];
   localStorage.setItem("from", e);
-}
+};
+
 li[i].classList.add("da");
